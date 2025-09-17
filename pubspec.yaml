@@ -1,0 +1,36 @@
+name: clean_architecture_tdd_course
+description: TDD Clean Architecture for Flutter
+
+version: 1.0.0+1
+
+environment:
+  sdk: '3.5.3'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Service locator
+  get_it: ^7.6.7
+
+  # Bloc for state management
+  flutter_bloc: ^8.1.4
+
+  # Value equality
+  equatable: ^2.0.5
+
+  # Functional programming
+  dartz: ^0.10.1
+
+  # Remote API (data_connection_checker đã deprecated → dùng connectivity_plus)
+  connectivity_plus: ^6.0.3
+  http: ^1.2.2
+
+  # Local cache
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.4
+  build_runner: ^2.4.8
