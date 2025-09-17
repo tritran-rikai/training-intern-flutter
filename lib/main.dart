@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'features/number_trivia/presentation/pages/number_trivia_page.dart';
 import 'injection_container.dart' as di;
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'Number Trivia',
       theme: ThemeData(
         primaryColor: Colors.green.shade800,
-        accentColor: Colors.green.shade600,
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: Colors.green.shade600),
       ),
       home: NumberTriviaPage(),
     );
